@@ -3,7 +3,6 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <link rel="preload" href="./asset/font/Donau.ttf" as="font" />
     </head>
 
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
@@ -12,7 +11,7 @@
     <script src="./js/gesture-handler.js"></script>
 
     <body>
-        <h1>Inquadra il marker con la scritta "hir"o</h1>
+        <h1>Inquadra il marker con la scritta Hiro</h1>
         <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false"  gesture-detector id="scene">
 
             <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
@@ -22,7 +21,7 @@
                 <a-entity gltf-model="./asset/ship.glb" move position="0 0 0" rotation="-90 0 0" scale="0.1 0.1 0.1"
                 class="clickable" gesture-handler></a-entity>
                 <a-text rotation="-90 0 0" position="-0.5 0 -1" width="2"  letter-spacing="5" line-height="50" 
-                value="Modellino barca" font="./asset/font/Donau.ttf"></a-text>
+                value="Modellino barca" font="./asset/SpecialElite.json"></a-text>
             </a-marker>
 
             <a-entity camera></a-entity>
