@@ -3,6 +3,9 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <style>
+            @font-face { font-family: Donau; src: url('./asset/font/Donau.ttf'); } 
+          </style>
     </head>
 
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
@@ -21,8 +24,7 @@
                 <a-entity gltf-model="./asset/ship.glb" move position="0 0 0" rotation="-90 0 0" scale="0.1 0.1 0.1"
                 class="clickable" gesture-handler></a-entity>
                 <a-text rotation="-90 0 0" position="-0.5 0 -1" width="2"  letter-spacing="5" line-height="50" 
-                value="Modellino barca" font="./asset/font/Donau.ttf"
-                ></a-text>
+                value="Modellino barca" font="./asset/font/Donau.ttf"></a-text>
             </a-marker>
 
             <a-entity camera></a-entity>
