@@ -1,0 +1,12 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Elite';
+  background-image: url("./asset/sfondo.jpg") !important; background-size: 230%;;
+}
+#app {
+  padding: 20px;
+  margin: 20px;
+}
