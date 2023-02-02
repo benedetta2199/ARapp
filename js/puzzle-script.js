@@ -306,7 +306,7 @@ const app = new Vue({
                   // normally just zgo("index.html") to reload 
                   // but it is different in CodePen and they have disabled document.location.reload()
                   // so not sure what to do... here is a the puzzle on ZIM
-                  .tap(() => {zgo("./puzzleLeve.html?img="+img);});
+                  .tap(() => {zgo("./puzzleLevel.html?img="+img);});
                 });
               } else stats.text = `Posizionat${placed == 1 ? "o" : "i"} ${placed} pezz${placed == 1 ? "o" : "i"} su ${num}`;
             } else stage.update();
