@@ -260,7 +260,7 @@ const app = new Vue({
 
           const num = numX * numY;
           let placed = 0;
-          STYLE = { color: '#EFE7DE', size: 20, font: 'Elite' };
+          STYLE = { color: '#EFE7DE', size: 26, font: 'Elite' };
           const stats = new Label({
             text: `Posizionat${placed == 1 ? "o" : "i"} ${placed} pezz${placed == 1 ? "o" : "i"} su ${num}`,
             italic: true,
@@ -300,7 +300,7 @@ const app = new Vue({
                     backgroundColor: "#2c3e3d"}).
 
                   sca(.8).
-                  pos(0, 50, CENTER, BOTTOM).
+                  pos(0, 80, CENTER, BOTTOM).
                   alp(0).
                   animate({ alpha: 1 })
                   // normally just zgo("index.html") to reload 
@@ -316,8 +316,8 @@ const app = new Vue({
           // CHECKBOXES AND FINISHING TOUCHES
 
           Style.addType("CheckBox", { backgroundColor: '#00000000',borderColor: '#EFE7DE', font: 'Elite', });
-          const hintCheck = new CheckBox(20, "Aggiungi contorno").alp(.8).pos(0, 120, CENTER, BOTTOM).wire({ target: hint, prop: "visible", input: "checked" });
-          const picCheck = new CheckBox(20, "Aggiungi figura").alp(.8).pos(0, 80, CENTER, BOTTOM).wire({ target: pic, prop: "visible", input: "checked" });
+          const hintCheck = new CheckBox(26, "Aggiungi contorno").alp(.8).pos(0, 120, CENTER, BOTTOM).wire({ target: hint, prop: "visible", input: "checked" });
+          const picCheck = new CheckBox(26, "Aggiungi figura").alp(.8).pos(0, 80, CENTER, BOTTOM).wire({ target: pic, prop: "visible", input: "checked" });
           
 
           pieces.top(); // add pieces above everything
