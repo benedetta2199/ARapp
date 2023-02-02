@@ -54,9 +54,8 @@
     <a-scene embedded arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono' renderer='antialias: true; alpha: true; precision: medium;' vr-mode-ui="enabled: false" stats>
     <a-marker vidhandler preset="custom" type='pattern' url='...' smoothCount=0 smoothTolerance=0.0001>-->
 
-
-        <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" 
-            gps-entity-place="longitude: 12.244300; latitude: 44.141762;" animation-mixer/>
+        <a-image src="./assets/2d/SanPioV" rotation="0 180 0" scale="0.15 0.15 0.15" 
+            gps-entity-place="longitude: 12.244300; latitude: 44.141762;" animation-mixer/></a-image>
 
             <a-camera gps-new-camera rotation-reader positionMinAccuracy="200"></a-entity>
         </a-scene>
