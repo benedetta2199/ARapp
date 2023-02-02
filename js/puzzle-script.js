@@ -1,11 +1,10 @@
 const urlParams = new URLSearchParams(window.location.search);
 const img = urlParams.get('img');
-
-// ?img=1&difficult=easy
-
-const difficult = 'easy';
+const difficult = urlParams.get('difficult');
 //const srcImg = 'https://images.ctfassets.net/hrltx12pl8hq/3j5RylRv1ZdswxcBaMi0y7/b84fa97296bd2350db6ea194c0dce7db/Music_Icon.jpg';
 //const srcImg = './asset/'+urlParams.get('img')+'.jpg';
+
+// ?img=1&difficult=easy
 
 let srcImg;
 switch(img){
@@ -106,7 +105,12 @@ const app = new Vue({
           // PUZZLE SIZE
           
           let numX = 2;
-          let numY = 3;
+          let numY = 3; 
+          switch(difficult){
+            case 'easy': numX = 2; numY = 3;break;
+            case 'medium': numX = 3; numY = 4;break;
+            case 'hard': numX = 4; numY = 6;break;
+          }
           const obj = getQueryString(); // note, getQueryString returns {} now if no query string    
           if (obj.col) numX = Math.min(10, Number(obj.col)); // or we would have to start chaching things...
           if (obj.row) numY = Math.min(14, Number(obj.row));

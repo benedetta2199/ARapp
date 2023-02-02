@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="shortcut icon" href="#" />
+
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const img = urlParams.get('img');
+            
+            //aggiungi il parametro img e difficoltà al link dei bottoni
+            function addLink() {
+              document.getElementById("easy").href = 'https://benedetta2199.github.io/ARapp/puzzle?diffucult=easy&img='+img;
+              document.getElementById("medium").href = 'https://benedetta2199.github.io/ARapp/puzzle?diffucult=medium&img='+img;
+              document.getElementById("hard").href = 'https://benedetta2199.github.io/ARapp/puzzle?diffucult=hard&img='+img;
+            }
+          </script>
+    </head>
+
+    <body onload="addLink()">
+        <h1>Seleziona il livello di difficoltà del puzzle</h1>
+        <div class="card my-4">
+            <div class="my-1 text-center">
+                 <a href="./" id="easy"><button class='btn'>Facile</button></a>
+                 <p>Il puzzle sarà 3x2 </br> per un totale di 6 pezzi</p>
+            </div>
+            <div class="my-1  text-center">
+                <a href="./" id="medium"><button class='btn'>Medio</button></a>
+                <p>Il puzzle sarà 4x3 </br> per un totale di 6 pezzi</p>
+           </div>
+           <div class="my-1  text-center">
+                <a href="./" id="hard"><button class='btn'>Difficile</button></a>
+                <p>Il puzzle sarà 6x4 </br> per un totale di 24 pezzi</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -2,11 +2,11 @@
 @font-face {font-family: 'Elite'; src: url('./asset/font/SpecialElite-Regular.ttf')}
 
 body{
-    display: flex;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-family: 'Elite';
+    color: #EFE7DE !important;
+    font-family: 'Elite' !important;
     background-image: url("./asset/sfondo.jpg"); background-size: 230%;;
 }
 
@@ -14,7 +14,7 @@ h1{
     font-family: 'Donau';
     font-size: 28px;
     text-transform: uppercase;
-    position: absolute;
+    position: relative;
     top: 5px;
     text-align: center;
 }
@@ -55,7 +55,26 @@ h1{
     align-items: center;
     justify-content: center;
 }
-canvas {
-    background-color: aliceblue !important;
+#app canvas, .card {
+    background-color: #EFE7DE !important;
     border-radius: 10px;
+}
+
+.card{
+    width: 90%;
+    border: auto 5%;
+    position: relative;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+    color: #2c3e3d;
+}
+.card p {
+    font-size: small;
+}
+
+.btn{
+    background-color: #2c3e3d !important;
+    color: #EFE7DE !important ;
 }
