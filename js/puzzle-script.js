@@ -186,7 +186,7 @@ const app = new Vue({
               .center()
               .ord(-1) // under pieces     
               .cache(-5,-5,pic.width+10,pic.height+10) // cache by default does not include outside border 
-              .alp(.2)
+              .alp(.5)
               .vis(0); // checkbox below to show
           
           // make a little box to do hit test to see if in right place
