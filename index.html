@@ -41,14 +41,14 @@
     <body>
         <h1>Inquadra il marker con la scritta Hiro</h1>
         <a href="./asset/font/SpecialElite-Regular.ttf" hidden></a>
-        <a-scene embedded arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono' 
-            vr-mode-ui="enabled: false" renderer='antialias: true; alpha: true; precision: medium;' gesture-detector id="scene">
+        <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false"  gesture-detector id="scene">
 
-            <!--PARAMETRI TELEFONO  debugUIEnabled: false;
-                <a-scene embedded arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono' renderer='antialias: true; alpha: true; precision: medium;' vr-mode-ui="enabled: false" stats>
-                <a-marker vidhandler preset="custom" type='pattern' url='...' smoothCount=0 smoothTolerance=0.0001>-->
+<!--PARAMETRI TELEFONO 
+    <a-scene embedded arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono' renderer='antialias: true; alpha: true; precision: medium;' vr-mode-ui="enabled: false" stats>
+    <a-marker vidhandler preset="custom" type='pattern' url='...' smoothCount=0 smoothTolerance=0.0001>-->
 
-            <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" smoothCount=0 smoothTolerance=0.0001>
+
+            <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA" smoothCount=0 smoothTolerance=0.0001>
                  <!--<a-box position='0 1 0' rotation="45 0 0" material='color: yellow;'></a-box>
                 https://rawcdn.githack.com/BabylonJS/MeshesLibrary/55f475726670be2e7e4017b5f88c5762a90508c2/shark.glb
                 <a-entity text="value: Hello World;"></a-entity>-->
@@ -56,7 +56,7 @@
                 class="clickable" gesture-handler id="3Dmodel"></a-entity>
                 <a-text rotation="-90 0 0" position="-0.5 0 -1" width="2"  letter-spacing="5" line-height="50" id="textAR"
                 value="Modellino barca" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>-->
-                <a-entity gltf-model="" move position="0 0 0" rotation="-90 0 0" scale="0.3 0.3 0.3"
+                <a-entity gltf-model="" move position="0 0 0" rotation="-90 0 0" scale="0.5 0.5 0.5"
                 class="clickable" gesture-handler id="3Dmodel"></a-entity>
                 <a-text rotation="-90 0 0" position="-0.5 0 -1" width="5"  letter-spacing="5" line-height="50" id="textAR"
                 value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
