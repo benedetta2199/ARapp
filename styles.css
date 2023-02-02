@@ -8,13 +8,14 @@ body{
     color: #EFE7DE !important;
     font-family: 'Elite' !important;
     background-image: url("./asset/sfondo.jpg"); background-size: 230%;;
+    width: 100%;
 }
 
 h1{
     font-family: 'Donau';
     font-size: 28px;
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
     top: 5px;
     text-align: center;
     font-weight: bold !important;

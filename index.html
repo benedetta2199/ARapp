@@ -17,17 +17,10 @@
         const img = urlParams.get('img');
 
         switch(img){
-            case 1:
+            case '1':
                 document.getElementById("3Dmodel").setAttribute('gltf-model',"./asset/3d/clio.glb");
                 document.getElementById("textAR").setAttribute('value',"Statua");
                 break;
-        }
-        
-        //aggiungi il parametro img e difficoltà al link dei bottoni
-        function addLink() {
-          document.getElementById("easy").href = 'https://benedetta2199.github.io/ARapp/puzzle?difficult=easy&img='+img;
-          document.getElementById("medium").href = 'https://benedetta2199.github.io/ARapp/puzzle?difficult=medium&img='+img;
-          document.getElementById("hard").href = 'https://benedetta2199.github.io/ARapp/puzzle?difficult=hard&img='+img;
         }
     </script>
 

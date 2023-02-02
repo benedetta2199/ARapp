@@ -15,13 +15,6 @@ switch(img){
   case '5': srcImg='./asset/puzzle/5.jpg';break;
 }
 
-/*let srcImg;
-switch('4'){
-  case '1': srcImg='https://cdn.wallpapersafari.com/2/67/Ttw8D9.jpg';break;
-  case '2': srcImg='http://media.idownloadblog.com/wp-content/uploads/2014/05/Summer_iPhone5_5C_5S.png';break;
-  case '3': srcImg='https://png.pngtree.com/thumb_back/fw800/background/20210414/pngtree-decorative-volume-geometric-composition-of-motion-gradient-cylinders-vectors-editable-vertical-image_607109.jpg';break;
-  case '4': srcImg='https://i.joecomp.com/img/wallpapers/657/15-best-nature-wallpapers-in-4k-and-full-hd-for-desktop-and-mobile_29.jpg';break;
-}*/
 
 const app = new Vue({
   el: '#zim',
