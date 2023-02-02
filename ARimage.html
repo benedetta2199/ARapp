@@ -57,7 +57,7 @@
         <a-image src="./assets/2d/SanPioV" rotation="0 180 0" scale="0.15 0.15 0.15" 
             gps-entity-place="longitude: 12.244300; latitude: 44.141762;" animation-mixer/></a-image>
 
-            <a-camera gps-new-camera rotation-reader positionMinAccuracy="200"></a-entity>
+            <a-camera rotation-reader id='camera1' look-controls-enabled='false' arjs-device-orientation-controls='smoothingFactor: 0.1' gps-new-camera='gpsMinDistance: 5'> </a-camera>
         </a-scene>
                
         <fieldset class='glass'>
