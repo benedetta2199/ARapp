@@ -13,6 +13,7 @@ switch(img){
   case '2': srcImg='./asset/puzzle/prova2.jpg';break;
   case '3': srcImg='./asset/puzzle/prova3.jpg';break;
   case '4': srcImg='./asset/puzzle/prova4.jpg';break;
+  case '5': srcImg='./asset/puzzle/prova5.jpg';break;
 }
 
 /*let srcImg;
