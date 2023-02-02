@@ -9,14 +9,24 @@
 <body>
   <!-- partial:index.partial.html -->
   <div id="app">
-    <div>{{ message}}</div>
     <!-- Canvas -->
     <div id="zim"></div>
     <!-- Add Rectangle Button -->
     <div>
-      <button @click="drawRect">Add Rect</button>
-      <button @click="subWidth">-</button>
-      <button @click="addWidth">+</button>
+      <fieldset class='glass'>
+        <legend>Interagisci con i pezzi</legend>
+                    
+        <div>
+          <img src='./asset/move.gif' width=45 >
+          <p>Tieni premuto per muovere</p>
+        </div>
+
+        <div>
+            <img src='./asset/rotation.gif' width=50 >
+            <p>Clicca per ruotare</p>
+          </div>
+
+      </fieldset>
     </div>
   </div>
   <!-- partial -->

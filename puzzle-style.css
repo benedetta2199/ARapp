@@ -1,12 +1,46 @@
+@font-face {font-family: 'Donau'; src: url('./asset/font/Donau.ttf')}        
+@font-face {font-family: 'Elite'; src: url('./asset/font/SpecialElite-Regular.ttf')}
+
 body{
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: 'Elite';
+  font-family: 'Elite' !important;
   background-image: url("./asset/sfondo.jpg") !important; background-size: 230%;;
 }
 #app {
   padding: 20px;
   margin: 20px;
 }
+
+
+.glass {
+  z-index: 2;
+  position: absolute;
+  top: 5px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);            
+}
+
+.glass legend{
+  width:65%;
+  padding-right: 10px;
+  text-align: right;
+  font-family: 'Donau';
+  font-size: 18px;
+  text-transform: uppercase;
+  }
+
+.glass div{
+  display: flex;
+  margin: auto 20px;
+  }
+
+.glass p{
+  margin: auto 10px;
+  font-size: 12px;
+  }
