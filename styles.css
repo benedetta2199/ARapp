@@ -55,7 +55,7 @@ h1{
     align-items: center;
     justify-content: center;
 }
-#pulle canvas, .card {
+#puzzle canvas, .card {
     background-color: #EFE7DE !important;
     border-radius: 10px;
 }
