@@ -20,7 +20,9 @@
 
             switch(img){
                 case '1':
-                    document.getElementById("3Dmodel").setAttribute('gltf-model',"./asset/3d/clio.glb");
+                    const m3D = document.getElementById("3Dmodel");
+                    m3D.removeAttribute("gltf-model");
+                    m3D.setAttribute('gltf-model',"./asset/3d/clio.glb");
                     document.getElementById("textAR").setAttribute('value',"Statua");
                     break;
             }
@@ -36,9 +38,13 @@
                  <!--<a-box position='0 1 0' rotation="45 0 0" material='color: yellow;'></a-box>
                 https://rawcdn.githack.com/BabylonJS/MeshesLibrary/55f475726670be2e7e4017b5f88c5762a90508c2/shark.glb
                 <a-entity text="value: Hello World;"></a-entity>-->
-                <a-entity gltf-model="./asset/3d/ship.glb" move position="0 0 0" rotation="-90 0 0" scale="0.1 0.1 0.1"
+                 <!--<a-entity gltf-model="./asset/3d/ship.glb" move position="0 0 0" rotation="-90 0 0" scale="0.1 0.1 0.1"
                 class="clickable" gesture-handler id="3Dmodel"></a-entity>
                 <a-text rotation="-90 0 0" position="-0.5 0 -1" width="2"  letter-spacing="5" line-height="50" id="textAR"
+                value="Modellino barca" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>-->
+                <a-entity gltf-model="./asset/3d/ship.glb" move position="0 0 0" rotation="-90 0 0" scale="1 1 1"
+                class="clickable" gesture-handler id="3Dmodel"></a-entity>
+                <a-text rotation="-90 0 0" position="0 0 0" width="2"  letter-spacing="5" line-height="50" id="textAR"
                 value="Modellino barca" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
             </a-marker>
 
