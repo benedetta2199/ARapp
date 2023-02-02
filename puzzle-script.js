@@ -8,6 +8,12 @@ const difficult = 'easy';
 const srcfont = './asset/font/SpecialElite-Regular.ttf'
 //const srcImg = './asset/'+urlParams.get('img')+'.jpg';
 
+/*let srcImg;
+switch(img){
+  case '1': srcImg='./asset/sfondo.jpg';break;
+  case '2': srcImg='./asset/puzzle/prova2.jpg';break;
+  case '3': srcImg='./asset/puzzle/prova3.jpg';break;
+}*/
 
 let srcImg;
 switch('4'){
@@ -18,7 +24,7 @@ switch('4'){
 }
 
 const app = new Vue({
-  el: '#app',
+  el: '#zim',
   data: {
     message: 'Vue + ZIM',
     rectWidth: 200 },
