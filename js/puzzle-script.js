@@ -260,12 +260,12 @@ const app = new Vue({
 
           const num = numX * numY;
           let placed = 0;
-          STYLE = { color: '#2c3e3d', size: 20, font: 'Elite' };
+          STYLE = { color: '#EFE7DE', size: 20, font: 'Elite' };
           const stats = new Label({
             text: `Posizionat${placed == 1 ? "o" : "i"} ${placed} pezz${placed == 1 ? "o" : "i"} su ${num}`,
             italic: true,
             align: CENTER }).
-          centerReg().pos(0, 50, CENTER, TOP);
+          centerReg().pos(0, 100, CENTER, TOP);
 
 
           // ~~~~~~~~~~~~~~~~~~~~~
@@ -280,6 +280,7 @@ const app = new Vue({
               placed++;
               if (placed == num) {
                 stats.text = `Complimenti ${num} tutti i pezzi sono stati posizionati!`;
+                stats.pos(0, 50, CENTER, TOP);
                 timeout(1, function () {
                   emitter.emitterForce = 8;
                   emitter.center().mov(0, -170).spurt(100);
@@ -294,7 +295,7 @@ const app = new Vue({
                   pic.alp(0).animate({ alpha: 1 }, .7);
                   new Button({
                     label: "Gioca ancora",
-                    color: white,
+                    color: '#EFE7DE',
                     corner: 10,
                     backgroundColor: "#2c3e3d"}).
 
@@ -314,9 +315,9 @@ const app = new Vue({
           // ~~~~~~~~~~~~~~~~~~~~~
           // CHECKBOXES AND FINISHING TOUCHES
 
-          Style.addType("CheckBox", { backgroundColor: '#00000000',borderColor: '#2c3e3d', font: 'Elite', });
-          const hintCheck = new CheckBox(20, "Aggiungi contorno").alp(.8).pos(0, 70, CENTER, BOTTOM).wire({ target: hint, prop: "visible", input: "checked" });
-          const picCheck = new CheckBox(20, "Aggiungi figura").alp(.8).pos(0, 30, CENTER, BOTTOM).wire({ target: pic, prop: "visible", input: "checked" });
+          Style.addType("CheckBox", { backgroundColor: '#00000000',borderColor: '#EFE7DE', font: 'Elite', });
+          const hintCheck = new CheckBox(20, "Aggiungi contorno").alp(.8).pos(0, 120, CENTER, BOTTOM).wire({ target: hint, prop: "visible", input: "checked" });
+          const picCheck = new CheckBox(20, "Aggiungi figura").alp(.8).pos(0, 80, CENTER, BOTTOM).wire({ target: pic, prop: "visible", input: "checked" });
           
 
           pieces.top(); // add pieces above everything
