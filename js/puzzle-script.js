@@ -9,11 +9,11 @@ const difficult = 'easy';
 
 let srcImg;
 switch(img){
-  case '1': srcImg='./asset/puzzle/prova1.jpg';break;
-  case '2': srcImg='./asset/puzzle/prova2.jpg';break;
-  case '3': srcImg='./asset/puzzle/prova3.jpg';break;
-  case '4': srcImg='./asset/puzzle/prova4.jpg';break;
-  case '5': srcImg='./asset/puzzle/prova5.jpg';break;
+  case '1': srcImg='./asset/puzzle/1.jpg';break;
+  case '2': srcImg='./asset/puzzle/2.jpg';break;
+  case '3': srcImg='./asset/puzzle/3.jpg';break;
+  case '4': srcImg='./asset/puzzle/4.jpg';break;
+  case '5': srcImg='./asset/puzzle/5.jpg';break;
 }
 
 /*let srcImg;
