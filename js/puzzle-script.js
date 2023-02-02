@@ -185,7 +185,7 @@ const app = new Vue({
           // make a little box to do hit test to see if in right place
           const snap = 50; // pixel distance considered correct
           loop(hint, h=>{
-              h.box = new Rectangle(snap,snap).centerReg(h).vis(0); // do not use alpha=0 as that will make it not hittable        
+              h.box = new Rectangle(snap,snap).centerReg(h).ord(-2).vis(0); // do not use alpha=0 as that will make it not hittable        
           });
           
           
