@@ -8,8 +8,8 @@
     </head>
 
     
-    <!--<script src="./js/gesture-detector.js"></script>
-    <script src="./js/gesture-handler.js"></script>-->
+    <script src="./js/gesture-detector.js"></script>
+    <script src="./js/gesture-handler.js"></script>
 
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
@@ -43,7 +43,7 @@
     </script>
 
     <body>
-        <a-scene embedded  loading-screen="enabled: false;" arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false" >
+        <a-scene embedded  loading-screen="enabled: false;" arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false" gesture-detector>
         <!--<a-scene embedded arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'
             vr-mode-ui="enabled: false"  gesture-detector id="scene">
 
@@ -54,7 +54,7 @@ PARAMETRI TELEFONO
         <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="-45 100 20" position="0 0 0" look-at="[gps-camera]"
             gps-entity-place="latitude: 44.141820; longitude: 12.244194; "/></a-image>
             
-            <a-camera gps-camera rotation-reader look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1'> </a-camera>
+            <a-camera gps-camera rotation-reader look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' class="clickable" gesture-scroll > </a-camera>
         </a-scene>
                
         <fieldset class='glass'>
