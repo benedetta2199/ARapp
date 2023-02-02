@@ -16,12 +16,15 @@
         const urlParams = new URLSearchParams(window.location.search);
         const img = urlParams.get('img');
 
-        switch(img){
-            case '1':
-                document.getElementById("3Dmodel").setAttribute('gltf-model',"./asset/3d/clio.glb");
-                document.getElementById("textAR").setAttribute('value',"Statua");
-                break;
-        }
+        document.addEventListener("DOMContentLoaded", function(event) { 
+
+            switch(img){
+                case '1':
+                    document.getElementById("3Dmodel").setAttribute('gltf-model',"./asset/3d/clio.glb");
+                    document.getElementById("textAR").setAttribute('value',"Statua");
+                    break;
+            }
+        });
     </script>
 
     <body>
