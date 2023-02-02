@@ -3,37 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - ZIM inside of Vue</title>
-  <link rel="stylesheet" href="./puzzle-style.css">
+  <link rel="stylesheet" href="./styles.css">
 
 </head>
 <body>
   <!-- partial:index.partial.html -->
   <div id="app">
+    <h1>Ricomponi il puzzle</h1>
+    <!--<div>{{ message}}</div> -->
     <!-- Canvas -->
-    <div id="zim"></div>
     <!-- Add Rectangle Button -->
-    <div>
+      <!-- <button @click="drawRect">Add Rect</button>-->
+
       <fieldset class='glass'>
         <legend>Interagisci con i pezzi</legend>
                     
         <div>
           <img src='./asset/move.gif' width=45 >
-          <p>Tieni premuto per muovere</p>
+          <p>Tieni premuto per spostare</p>
         </div>
 
         <div>
             <img src='./asset/rotation.gif' width=50 >
-            <p>Clicca per ruotare</p>
+            <p>Clicca per routare</p>
           </div>
 
       </fieldset>
-    </div>
   </div>
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
   <script src='https://zimjs.org/cdn/1.3.3/createjs.js'></script>
-  <script src='https://zimjs.org/cdn/cat/04/zim.js'></script>
-  <script src="./js/puzzle-script.js"></script>
+  <script src='https://zimjs.org/cdn/cat/04/zim.js'></script><script  src="./puzzle-script.js"></script>
 
 </body>
 </html>

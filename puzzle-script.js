@@ -35,7 +35,7 @@ const app = new Vue({
     const frame = new Frame("fit", 750, 1000, '#00000000', '#00000000', srcImg,);
       frame.on("ready", () => {// ES6 Arrow Function - similar to function(){} {ready, assets:"SpecialElite-Regular.ttf", path:"/assets/font"}
         //zog("ready from ZIM Frame"); // logs in console (F12 - choose console)
-        frame.loadAssets({font: "Elite", src:"font/SpecialElite-Regular.ttf"});
+        frame.loadAssets({font: "Elite", src:"./asset/font/SpecialElite-Regular.ttf"});
         frame.on("complete", ()=>{
 
           // often need below - so consider it part of the template
@@ -321,20 +321,4 @@ const app = new Vue({
       })});
   },
 
-  methods: {
-    drawRect() {
-      this.rect.center();
-      this.stage.update();
-    },
-    addWidth() {
-      // widthOnly is the ZIM property 
-      // setting width would proportially set the height 
-      this.rect.widthOnly += 10;
-      this.rect.center(); // optional
-      this.stage.update();
-    },
-    subWidth() {
-      this.rect.widthOnly -= 10;
-      this.rect.center();
-      this.stage.update();
-    } } });
+  methods: {} });

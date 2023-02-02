@@ -1,4 +1,4 @@
-@font-face {font-family: 'Donau'; src: url('./asset/font/Donau.ttf')}        
+@font-face {font-family: 'Donau'; src: url('./asset/font/Donau.ttf')}  
 @font-face {font-family: 'Elite'; src: url('./asset/font/SpecialElite-Regular.ttf')}
 
 body{
@@ -9,16 +9,21 @@ body{
   font-family: 'Elite' !important;
   background-image: url("./asset/sfondo.jpg") !important; background-size: 230%;;
 }
-#app {
-  padding: 20px;
-  margin: 20px;
+#app{
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+canvas {
+  background-color: aliceblue !important;
+  border-radius: 10px;
 }
 
-
 .glass {
-  z-index: 2;
   position: absolute;
-  top: 5px;
+  bottom: 5px;
   background: rgba(255,255,255,0.4);
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.2);

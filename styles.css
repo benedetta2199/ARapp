@@ -47,3 +47,15 @@ h1{
     margin: auto 10px;
     font-size: 12px;
     }
+
+#app{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    background-color: aliceblue !important;
+    border-radius: 10px;
+}
