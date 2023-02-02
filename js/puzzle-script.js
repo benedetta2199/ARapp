@@ -104,13 +104,13 @@ const app = new Vue({
           // ~~~~~~~~~~~~~~~~~~~~~
           // PUZZLE SIZE
           
-          let numX = 2;
-          let numY = 3; 
+          let numX, numY; 
           switch(difficult){
             case 'easy': numX = 2; numY = 3;break;
             case 'medium': numX = 3; numY = 4;break;
             case 'hard': numX = 4; numY = 6;break;
           }
+          zog(difficult+" nx:"+numX+' ny:'+numY);
           const obj = getQueryString(); // note, getQueryString returns {} now if no query string    
           if (obj.col) numX = Math.min(10, Number(obj.col)); // or we would have to start chaching things...
           if (obj.row) numY = Math.min(14, Number(obj.row));
