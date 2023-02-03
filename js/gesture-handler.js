@@ -24,8 +24,7 @@ AFRAME.registerComponent("gesture-handler", {
         this.isVisible = false;
       });
       console.log("i"+ this.initialScale.x);
-      setInterval(function()
-         {
+      setTimeout(function(){
           this.handleScale = tempScale;
           this.handleRotation = tempRotation;
 
