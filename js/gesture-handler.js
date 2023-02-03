@@ -36,8 +36,8 @@ AFRAME.registerComponent("gesture-handler", {
         this.el.sceneEl.removeEventListener("twofingermove", this.handleScale);
       }
       this.initialScale = this.el.object3D.scale.clone();
-      console.log("u"+this.initialScale.x);
-      document.getElementById("log").innerText = m3D.getAttribute('scale').x;
+      console.log("u"+this.el.getScale());
+      document.getElementById("log").innerText = el.getScale();
     },
   
     remove: function () {
