@@ -11,6 +11,9 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+
+    
+    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
     
 
     <script>
@@ -48,7 +51,8 @@ PARAMETRI TELEFONO
     <a-scene embedded arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono' renderer='antialias: true; alpha: true; precision: medium;' vr-mode-ui="enabled: false" stats>
     <a-marker vidhandler preset="custom" type='pattern' url='...' smoothCount=0 smoothTolerance=0.0001>-->
 
-        <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" look-at="[gps-camera]"
+        <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" look-at="[gps-camera]" 
+            gesture-handler class="clickable"
             gps-entity-place="latitude: 44.141820; longitude: 12.244194; "/></a-image>
             
             <a-camera gps-camera rotation-reader look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' class="clickable"> </a-camera>
