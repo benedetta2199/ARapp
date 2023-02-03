@@ -32,7 +32,7 @@
                     break;
                 case '2':
                     m3D.setAttribute('gltf-model',"./asset/3d/ship.glb");
-                    m3D.object3D.scale.set(0.2, 0.2, 0.2);
+                    m3D.object3D.scale.set(0.25, 0.25, 0.25);
                     m3D.object3D.position.set(0, -1, 0);
                     document.getElementById("textAR").setAttribute('value',"Modellino di imbarcazione");
                     break;
@@ -54,7 +54,7 @@
             <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" 
                 smoothCount=0 smoothTolerance=0.0001>
                 <a-entity gltf-model="" move position="0 0 0" rotation="-45 0 0" scale="0.1 0.1 0.1" class="clickable" gesture-handler id="3Dmodel"></a-entity>
-                <a-text rotation="-45 0 0" position="-0.5 0 -1" width="1.8"  letter-spacing="4.8" line-height="50"  value="" negate="false" id="textAR"
+                <a-text rotation="-45 0 0" position="-0 0 -1" width="1.8"  letter-spacing="4.8" line-height="50"  value="" negate="false" id="textAR"
                     font="./asset/font/SpecialElite-Regular-msdf.json" align="center"></a-text>
             </a-marker>
 
