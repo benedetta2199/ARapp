@@ -9,8 +9,8 @@ AFRAME.registerComponent("gesture-handler", {
     },
   
     init: function () {
-      this.handleScale = this.handleScale.bind(this);
-      this.handleRotation = this.handleRotation.bind(this);
+      const tempScale = this.handleScale.bind(this);
+      const tempRotation = this.handleRotation.bind(this);
   
       this.isVisible = false;
       this.initialScale = this.el.object3D.scale.clone();
@@ -26,8 +26,8 @@ AFRAME.registerComponent("gesture-handler", {
       console.log("i"+ this.initialScale.x);
       setInterval(function()
          {
-          this.handleScale = this.handleScale.bind(this);
-          this.handleRotation = this.handleRotation.bind(this);
+          this.handleScale = tempScale;
+          this.handleRotation = tempRotation;
 
           this.initialScale = this.el.object3D.scale.clone();
           console.log("ui"+ this.initialScale.x);
