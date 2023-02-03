@@ -50,19 +50,33 @@
 
     <body>
         <h1>Inquadra il marker con la scritta Hiro</h1>
-        <a-scene arjs='sourceType: webcam; debugUIEnabled: false;' vr-mode-ui="enabled: false" gesture-detector id="scene">
+        <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false"  gesture-detector id="scene">
+            <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+                 <!--<a-box position='0 1 0' rotation="45 0 0" material='color: yellow;'></a-box>
+                https://rawcdn.githack.com/BabylonJS/MeshesLibrary/55f475726670be2e7e4017b5f88c5762a90508c2/shark.glb
+                <a-entity text="value: Hello World;"></a-entity>-->
+                <a-entity gltf-model="./asset/ship.glb" move position="0 0 0" rotation="-90 0 0" scale="0.1 0.1 0.1"
+                class="clickable" gesture-handler></a-entity>
+                <a-text rotation="-90 0 0" position="-0.5 0 -1" width="2"  letter-spacing="5" line-height="50" 
+                value="Modellino barca" font="./asset/font/SpecialElite-Regular.json"></a-text>
+                value="Modellino barca" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
+            </a-marker>
+
+            <a-entity camera></a-entity>
+        </a-scene>
+         <!--<a-scene arjs='sourceType: webcam; debugUIEnabled: false;' vr-mode-ui="enabled: false" gesture-detector id="scene">
             <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA" 
             smoothCount=0 smoothTolerance=0.0001>
                  <a-entity gltf-model="" position="0 -1 0" rotation="-45 0 0" scale="0.2 0.2 0.2" class="clickable" gesture-handler id="3Dmodel"></a-entity>
                  <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="1.8"  letter-spacing="5" line-height="50" align="center"
                       value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
-                <!--<a-entity gltf-model="" rotation="-45 0 0" position="0 0 0" scale='0.1 0.1 0.1' class="clickable" id="3Dmodel" gesture-handler></a-entity>
+               <a-entity gltf-model="" rotation="-45 0 0" position="0 0 0" scale='0.1 0.1 0.1' class="clickable" id="3Dmodel" gesture-handler></a-entity>
                 <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="1.8"  letter-spacing="4.5" line-height="50" align="center"
-                     value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>->
+                     value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
             </a-marker>
 
             <a-entity camera></a-entity>
-        </a-scene>
+        </a-scene>-->
                
         <fieldset class='glass'>
             <legend>Interagisci con il reperto</legend>
