@@ -53,7 +53,8 @@
         <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false"  gesture-detector id="scene">
             <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
                 <a-entity gltf-model="" move position="0 0 0" rotation="-90 0 0" scale="0.1 0.1 0.1" class="clickable" gesture-handler id="3Dmodel"></a-entity>
-                <a-text rotation="-90 0 0" position="-0.5 0 -1" width="1.8"  letter-spacing="4.8" line-height="50"  value="" negate="false" id="textAR"></a-text>
+                <a-text rotation="-90 0 0" position="-0.5 0 -1" width="1.8"  letter-spacing="4.8" line-height="50"  value="" negate="false" id="textAR"
+                    font="./asset/font/SpecialElite-Regular-msdf.json"></a-text>
             </a-marker>
 
             <a-entity camera></a-entity>
