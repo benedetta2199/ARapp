@@ -37,7 +37,7 @@ AFRAME.registerComponent("gesture-handler", {
       }
       this.initialScale = this.el.object3D.scale.clone();
       console.log("u"+el.getScale());
-      document.getElementById("log").innerText = prova(m3D.getAttribute('scale').x);
+      document.getElementById("log").innerText = m3D.getAttribute('scale').x;
     },
   
     remove: function () {
