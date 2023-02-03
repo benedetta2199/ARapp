@@ -55,7 +55,8 @@ PARAMETRI TELEFONO
             gesture-handler class="clickable"
             gps-entity-place="latitude: 44.141820; longitude: 12.244194; "/></a-image>
             
-            <a-camera gps-camera rotation-reader look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' class="clickable"> </a-camera>
+            <a-camera gps-camera rotation-reader look-controls-enabled='false'  gps-projected-camera='gpsMinDistance: 5'
+            arjs-look-controls='smoothingFactor: 0.1' class="clickable"> </a-camera>
         </a-scene>
                
         <fieldset class='glass'>
