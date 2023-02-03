@@ -9,6 +9,9 @@ AFRAME.registerComponent("gesture-handler", {
     },
   
     init: function () {
+      setTimeout(function(){
+        console.log(this);
+      },200);
       this.handleScale = this.handleScale.bind(this);
       this.handleRotation = this.handleRotation.bind(this);
   
@@ -23,9 +26,6 @@ AFRAME.registerComponent("gesture-handler", {
       this.el.sceneEl.addEventListener("markerLost", (e) => {
         this.isVisible = false;
       });
-      setTimeout(function(){
-        console.log(this);
-      },500);
     },
   
     update: function () {
@@ -37,9 +37,7 @@ AFRAME.registerComponent("gesture-handler", {
         this.el.sceneEl.removeEventListener("onefingermove", this.handleRotation);
         this.el.sceneEl.removeEventListener("twofingermove", this.handleScale);
       }
-      this.initialScale = this.el.object3D.scale.clone();
-      console.log("u"+this.el.getScale());
-      document.getElementById("log").innerText = el.getScale();
+      //this.initialScale = this.el.object3D.scale.clone();
     },
   
     remove: function () {
