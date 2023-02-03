@@ -5,7 +5,7 @@ AFRAME.registerComponent("gesture-handler", {
       enabled: { default: true },
       rotationFactor: { default: 5 },
       minScale: { default: 0.3 },
-      maxScale: { default: 8 },
+      maxScale: { default: 10 },
     },
   
     init: function () {
@@ -23,6 +23,7 @@ AFRAME.registerComponent("gesture-handler", {
       this.el.sceneEl.addEventListener("markerLost", (e) => {
         this.isVisible = false;
       });
+      console.log(el.getScale());
     },
   
     update: function () {
@@ -35,6 +36,7 @@ AFRAME.registerComponent("gesture-handler", {
         this.el.sceneEl.removeEventListener("twofingermove", this.handleScale);
       }
       this.initialScale = this.el.object3D.scale.clone();
+      console.log(el.getScale());
     },
   
     remove: function () {
