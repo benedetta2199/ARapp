@@ -24,6 +24,7 @@ AFRAME.registerComponent("gesture-handler", {
         this.isVisible = false;
       });
       console.log("i"+ this.initialScale.x);
+      document.getElementById("log").innerText='INIT'+this.initialScale.x
     },
   
     update: function () {
@@ -37,7 +38,7 @@ AFRAME.registerComponent("gesture-handler", {
       }
       this.initialScale = this.el.object3D.scale.clone();
       console.log("u"+this.el.getScale());
-      document.getElementById("log").innerText = el.getScale();
+      document.getElementById("log").innerText='UPDATE'+this.initialScale.x
     },
   
     remove: function () {
