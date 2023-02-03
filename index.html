@@ -22,10 +22,12 @@
             
             const m3D = document.getElementById("3Dmodel");
             m3D.removeAttribute("gltf-model");
+            m3D.removeAttribute("scale");
+            m3D.removeAttribute("position");
             switch(img){
                 case '1':
                     m3D.setAttribute('src',"./asset/3d/portrait.glb");
-                    m3D.setAttribute('scale',"0.05 0.05 0.05");
+                    m3D.setAttribute('scale',"0.01 0.01 0.01");
                     m3D.setAttribute('position',"0 -0.7 0");
                     document.getElementById("textAR").setAttribute('value',"Mezzo busto");
                     break;
