@@ -24,8 +24,7 @@ AFRAME.registerComponent("gesture-handler", {
         this.isVisible = false;
       });
       setTimeout(function(){
-        this.initialScale = this.el.object3D.scale.clone();
-        console.log("ui"+this.el.getScale());
+        console.log(this);
       },500);
     },
   
