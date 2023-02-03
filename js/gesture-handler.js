@@ -23,7 +23,7 @@ AFRAME.registerComponent("gesture-handler", {
       this.el.sceneEl.addEventListener("markerLost", (e) => {
         this.isVisible = false;
       });
-      console.log("i"+el.getScale());
+      console.log("i"+ this.initialScale.x);
     },
   
     update: function () {
@@ -36,7 +36,7 @@ AFRAME.registerComponent("gesture-handler", {
         this.el.sceneEl.removeEventListener("twofingermove", this.handleScale);
       }
       this.initialScale = this.el.object3D.scale.clone();
-      console.log("u"+el.getScale());
+      console.log("u"+this.initialScale.x);
       document.getElementById("log").innerText = m3D.getAttribute('scale').x;
     },
   
