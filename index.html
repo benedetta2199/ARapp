@@ -26,23 +26,23 @@
             switch(img){
                 case '1':
                     m3D.setAttribute('gltf-model',"./asset/3d/portrait.glb");
-                    m3D.setAttribute('scale', {x: 0.1, y: 0.1, z: 0.1});
-                    m3D.setAttribute('position',"0 -0.7 -3");
+                    m3D.object3D.scale.set(0.1, 0.1, 0.1);
                     document.getElementById("textAR").setAttribute('value',"Mezzo busto");
                     break;
                 case '2':
                     m3D.setAttribute('gltf-model',"./asset/3d/ship.glb");
-                    m3D.setAttribute('scale',{x: 0.2, y: 0.2, z: 0.2});
+                    m3D.object3D.scale.set(0.2, 0.2, 0.2);
                     m3D.setAttribute('position',"0 -1 0");
                     document.getElementById("textAR").setAttribute('value',"Modellino di imbarcazione");
                     break;
                 case '3':
                     m3D.setAttribute('gltf-model',"./asset/3d/vase.glb");
-                    m3D.setAttribute('scale',{x: 3, y: 3, z: 3});
+                    m3D.object3D.scale.set(3,3,3);
                     m3D.setAttribute('position',"0 -1 0");
                     document.getElementById("textAR").setAttribute('value',"Vaso");
                     break;
             }
+            console.log(m3D.getAttribute('scale'));
             
         });
     </script>
@@ -55,7 +55,7 @@
                  <!--<a-entity gltf-model="" position="0 -1 0" rotation="-45 0 0" scale="0.2 0.2 0.2" class="clickable" gesture-handler id="3Dmodel" move></a-entity>
                  <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="2"  letter-spacing="5" line-height="50" align="center"
                       value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>-->
-                <a-entity gltf-model="" rotation="-45 0 0" position="" class="clickable" id="3Dmodel" gesture-handler></a-entity>
+                <a-entity gltf-model="" rotation="-45 0 0" position="0 0 0" scale='0.1 0.1 0.1' class="clickable" id="3Dmodel" gesture-handler></a-entity>
                 <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="1.8"  letter-spacing="4.5" line-height="50" align="center"
                      value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
             </a-marker>
