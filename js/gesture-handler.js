@@ -11,7 +11,7 @@ AFRAME.registerComponent("gesture-handler", {
     init: function () {
       setTimeout(function(){
         console.log(this);
-      },200);
+      },100);
       this.handleScale = this.handleScale.bind(this);
       this.handleRotation = this.handleRotation.bind(this);
   
@@ -26,6 +26,8 @@ AFRAME.registerComponent("gesture-handler", {
       this.el.sceneEl.addEventListener("markerLost", (e) => {
         this.isVisible = false;
       });
+
+      console.log(this.handleScale);
     },
   
     update: function () {
