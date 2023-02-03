@@ -45,6 +45,7 @@
             }
             console.log(m3D.getAttribute('scale'));
             
+            document.getElementById("log").innerText = prova(m3D.getAttribute('scale').x);
         });
     </script>
 
@@ -92,6 +93,7 @@
             <legend>Interagisci con il reperto</legend>
             <div> <img src='./asset/move.gif' width=45 > <p>Usa un dito per ruotare</p> </div>
             <div> <img src='./asset/zoom.gif' width=50 > <p>Usa due dita per zoomare</p></div>
+            <p id="log"></p>
           </fieldset>
 
     </body>
