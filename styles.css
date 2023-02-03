@@ -9,8 +9,8 @@ body{
     font-family: 'Elite' !important;
     background-image: url("./asset/sfondo.jpg"); background-size: 230%;;
     width: 100%;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    margin-top: 2%;
 }
 
 h1{
