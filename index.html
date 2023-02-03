@@ -25,7 +25,7 @@
             switch(img){
                 case '1':
                     m3D.setAttribute('gltf-model',"./asset/3d/portrait.glb");
-                    m3D.setAttribute('scale',"1 1 1");
+                    m3D.setAttribute('scale',"0.05 0.05 0.05");
                     m3D.setAttribute('position',"0 -1 0");
                     document.getElementById("textAR").setAttribute('value',"Mezzo busto");
                     break;
@@ -37,7 +37,7 @@
                     break;
                 case '3':
                     m3D.setAttribute('gltf-model',"./asset/3d/vase.glb");
-                    m3D.setAttribute('scale',"0.05 0.05 0.05");
+                    m3D.setAttribute('scale',"1 1 1");
                     m3D.setAttribute('position',"0 -1 0");
                     document.getElementById("textAR").setAttribute('value',"Vaso");
                     break;
@@ -55,7 +55,7 @@
                  <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="2"  letter-spacing="5" line-height="50" align="center"
                       value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
 -->
-                <a-entity gltf-model="" position="" rotation="-45 0 45" scale="" class="clickable" id="3Dmodel" gesture-handler></a-entity>
+                <a-entity gltf-model="" position="" rotation="-45 0 -45" scale="" class="clickable" id="3Dmodel" gesture-handler></a-entity>
                 <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="2"  letter-spacing="5" line-height="50" align="center"
                      value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
             </a-marker>
