@@ -25,21 +25,21 @@
             m3D.removeAttribute("position");
             switch(img){
                 case '1':
-                    m3D.setAttribute('gltf-model',"./asset/3d/portrait.glb");
                     m3D.object3D.scale.set(0.05, 0.05, 0.05);
                     m3D.object3D.position.set(0, -0.5, 0);
+                    m3D.setAttribute('gltf-model',"./asset/3d/portrait.glb");
                     document.getElementById("textAR").setAttribute('value',"Mezzo busto");
                     break;
                 case '2':
-                    m3D.setAttribute('gltf-model',"./asset/3d/ship.glb");
                     m3D.object3D.scale.set(0.25, 0.25, 0.25);
                     m3D.object3D.position.set(0, -1, 0);
+                    m3D.setAttribute('gltf-model',"./asset/3d/ship.glb");
                     document.getElementById("textAR").setAttribute('value',"Modellino di imbarcazione");
                     break;
                 case '3':
-                    m3D.setAttribute('gltf-model',"./asset/3d/vase.glb");
                     m3D.object3D.scale.set(5,5,5);
                     m3D.object3D.position.set(0, -1, 0);
+                    m3D.setAttribute('gltf-model',"./asset/3d/vase.glb");
                     document.getElementById("textAR").setAttribute('value',"Vaso");
                     break;
             }
