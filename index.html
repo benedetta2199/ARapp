@@ -15,7 +15,6 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/3.0.0/aframe/build/aframe-ar-nft.js"></script>
 
     <script>
-        window.scrollTo(0,1);
         const urlParams = new URLSearchParams(window.location.search);
         const img = urlParams.get('img');
 
@@ -45,8 +44,8 @@
                     document.getElementById("textAR").setAttribute('value',"Vaso");
                     break;
             }
+            console.log('ok');
         });
-        console.log('ok');
     </script>
 
     <body>
