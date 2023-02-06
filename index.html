@@ -42,10 +42,8 @@
 
         document.addEventListener("DOMContentLoaded", function(event) { 
             const m = document.getElementById("marker");
-            m.innerHTML = m.innerHTML+` <a-entity gltf-model=${src} move position=${position} rotation="-45 0 0" scale=${scale} class="clickable" gesture-handler id="3Dmodel"></a-entity>`;
+            m.innerHTML = m.innerHTML+` <a-entity gltf-model=${src} move position="${position}" rotation="-45 0 0" scale="${scale}" class="clickable" gesture-handler id="3Dmodel"></a-entity>`;
             document.getElementById("textAR").setAttribute('value', text);
-            const c = document.getElementById("3Dmode");
-            console.log(c.getAttribute('scale')+ ' - '+ c.getAttribute('position'));
         });
     </script>
 
