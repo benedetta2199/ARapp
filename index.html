@@ -17,12 +17,9 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const img = urlParams.get('img');
+        const m3D = document.getElementById("3Dmodel");
 
         document.addEventListener("DOMContentLoaded", function(event) { 
-            
-            const m3D = document.getElementById("3Dmodel");
-            m3D.removeAttribute("gltf-model");
-            m3D.removeAttribute("position");
             switch(img){
                 case '1':
                     m3D.object3D.scale.set(0.05, 0.05, 0.05);
@@ -44,7 +41,8 @@
                     document.getElementById("textAR").setAttribute('value',"Vaso");
                     break;
             }
-            addGesture();
+
+
         });
     </script>
 
