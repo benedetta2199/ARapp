@@ -50,50 +50,18 @@
     <body>
         <h1>Inquadra il marker con la scritta Hiro</h1>
         <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false"  gesture-detector id="scene">
+
             <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" 
             smoothCount=0 smoothTolerance=0.0001 id='marker'>
-            
+
                 <a-text rotation="-45 0 0" position="-0 0 -1" width="1.8"  letter-spacing="4.8" line-height="50"  value="123" negate="false" id="textAR" 
                 font="./asset/font/SpecialElite-Regular-msdf.json" align="center"></a-text>
-                
+
             </a-marker>
 
             <a-entity camera></a-entity>
         </a-scene>
          <!--
-            
-            
-            
-            
-            
-            <a-scene arjs='sourceType:webcam' >
-            <a-marker smoothCount=0 smoothTolerance=0.0001>
-                 <a-entity gltf-model="" position="0 -1 0" rotation="-45 0 0" scale="0.2 0.2 0.2""></a-entity>
-                 <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="1.8"  letter-spacing="5" line-height="50" align="center"
-                      value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
-               <a-entity gltf-model="" rotation="-45 0 0" position="0 0 0" scale='0.1 0.1 0.1' class="clickable" id="3Dmodel" gesture-handler></a-entity>
-                <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="1.8"  letter-spacing="4.5" line-height="50" align="center"
-                     value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
-            </a-marker>
-
-        </a-scene>-->
-
-
-
-        <!--<a-scene arjs='sourceType: webcam; debugUIEnabled: false;' vr-mode-ui="enabled: false" gesture-detector id="scene">
-            <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA" 
-            smoothCount=0 smoothTolerance=0.0001>
-                 <a-entity gltf-model="" position="0 -1 0" rotation="-45 0 0" scale="0.2 0.2 0.2" class="clickable" gesture-handler id="3Dmodel"></a-entity>
-                 <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="1.8"  letter-spacing="5" line-height="50" align="center"
-                      value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
-               <a-entity gltf-model="" rotation="-45 0 0" position="0 0 0" scale='0.1 0.1 0.1' class="clickable" id="3Dmodel" gesture-handler></a-entity>
-                <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="1.8"  letter-spacing="4.5" line-height="50" align="center"
-                     value="" font="./asset/font/SpecialElite-Regular-msdf.json" negate="false"></a-text>
-            </a-marker>
-
-            <a-entity camera></a-entity>
-        </a-scene>-->
-               
         <fieldset class='glass'>
             <legend>Interagisci con il reperto</legend>
             <div> <img src='./asset/move.gif' width=45 > <p>Usa un dito per ruotare</p> </div>
