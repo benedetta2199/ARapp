@@ -19,29 +19,36 @@
         const img = urlParams.get('img');
 
         document.addEventListener("DOMContentLoaded", function(event) { 
-            const m3D = document.getElementById("3Dmodel");
+            let scale, position, src, text;
             switch(img){
                 case '1':
-                    m3D.object3D.scale.set(0.05, 0.05, 0.05);
-                    m3D.object3D.position.set(0, -0.5, 0);
-                    m3D.setAttribute('scale',{x:0.05, y: 0.05, z: 0.05});
-                    m3D.setAttribute('gltf-model',"./asset/3d/portrait.glb");
-                    document.getElementById("textAR").setAttribute('value',"Mezzo busto");
+                    scale='0.05, 0.05, 0.05';
+                    position='0, -0.5, 0';
+                    src="./asset/3d/portrait.glb";
+                    text="Mezzo busto";
                     break;
                 case '2':
-                    m3D.object3D.scale.set(0.25, 0.25, 0.25);
-                    m3D.object3D.position.set(0, -1, 0);
-                    m3D.setAttribute('gltf-model',"./asset/3d/ship.glb");
-                    document.getElementById("textAR").setAttribute('value',"Modellino di imbarcazione");
+                    scale='0.25, 0.25, 0.25';
+                    position='0, -1, 0';
+                    src="./asset/3d/ship.glb";
+                    text="Modellino di imbarcazione";
                     break;
                 case '3':
-                    m3D.object3D.scale.set(5,5,5);
-                    m3D.object3D.position.set(0, -1, 0);
-                    m3D.setAttribute('gltf-model',"./asset/3d/vase.glb");
-                    document.getElementById("textAR").setAttribute('value',"Vaso");
+                    scale='5,5,5';
+                    position='0, -1, 0';
+                    src="./asset/3d/vase.glb";
+                    text="Vaso";
                     break;
             }
 
+            document.getElementById("scene").innerHTML(
+                `<a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" 
+                smoothCount=0 smoothTolerance=0.0001>
+                <a-entity gltf-model=${src} move position=${position} rotation="-45 0 0" scale=${scale} class="clickable" gesture-handler id="3Dmodel"></a-entity>
+                <a-text rotation="-45 0 0" position="-0 0 -1" width="1.8"  letter-spacing="4.8" line-height="50"  value=${text} negate="false" id="textAR"
+                    font="./asset/font/SpecialElite-Regular-msdf.json" align="center"></a-text>
+                </a-marker>`
+            );
 
         });
     </script>
@@ -49,16 +56,22 @@
     <body>
         <h1>Inquadra il marker con la scritta Hiro</h1>
         <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false"  gesture-detector id="scene">
+            
+
+            <a-entity camera></a-entity>
+        </a-scene>
+         <!--
+            
             <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" 
                 smoothCount=0 smoothTolerance=0.0001>
                 <a-entity gltf-model="" move position="0 0 0" rotation="-45 0 0" scale="0.1 0.1 0.1" class="clickable" gesture-handler id="3Dmodel"></a-entity>
                 <a-text rotation="-45 0 0" position="-0 0 -1" width="1.8"  letter-spacing="4.8" line-height="50"  value="" negate="false" id="textAR"
                     font="./asset/font/SpecialElite-Regular-msdf.json" align="center"></a-text>
             </a-marker>
-
-            <a-entity camera></a-entity>
-        </a-scene>
-         <!--<a-scene arjs='sourceType:webcam' >
+            
+            
+            
+            <a-scene arjs='sourceType:webcam' >
             <a-marker smoothCount=0 smoothTolerance=0.0001>
                  <a-entity gltf-model="" position="0 -1 0" rotation="-45 0 0" scale="0.2 0.2 0.2""></a-entity>
                  <a-text id="textAR" position="0 1 0" rotation="-45 0 0" width="1.8"  letter-spacing="5" line-height="50" align="center"
