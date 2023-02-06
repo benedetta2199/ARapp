@@ -41,14 +41,13 @@
                     break;
             }
 
-            document.getElementById("scene").innerHTML(
+            document.getElementById("scene").innerHTML =
                 `<a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" 
                 smoothCount=0 smoothTolerance=0.0001>
                 <a-entity gltf-model=${src} move position=${position} rotation="-45 0 0" scale=${scale} class="clickable" gesture-handler id="3Dmodel"></a-entity>
                 <a-text rotation="-45 0 0" position="-0 0 -1" width="1.8"  letter-spacing="4.8" line-height="50"  value=${text} negate="false" id="textAR"
                     font="./asset/font/SpecialElite-Regular-msdf.json" align="center"></a-text>
-                </a-marker>`
-            );
+                </a-marker>`;
 
         });
     </script>
