@@ -48,7 +48,7 @@
     </script>
 
     <body>
-        <h1>Inquadra il marker con la scritta Hiro</h1>
+        <h1 class="white">Inquadra il marker con la scritta Hiro</h1>
         <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false"  gesture-detector id="scene">
 
             <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" 
@@ -61,12 +61,11 @@
 
             <a-entity camera></a-entity>
         </a-scene>
-         <!--
+
         <fieldset class='glass'>
             <legend>Interagisci con il reperto</legend>
             <div> <img src='./asset/move.gif' width=45 > <p>Usa un dito per ruotare</p> </div>
             <div> <img src='./asset/zoom.gif' width=50 > <p>Usa due dita per zoomare</p></div>
           </fieldset>
-
     </body>
 </html>

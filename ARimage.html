@@ -43,13 +43,15 @@
     </script>
 
     <body>
+        <h1 class="white">Muovi lentamente il telefono</h1>
         <a-scene embedded  loading-screen="enabled: false;" arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
         <!--<a-scene embedded arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'
             vr-mode-ui="enabled: false"  gesture-detector id="scene">
 
-PARAMETRI TELEFONO 
-    <a-scene embedded arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono' renderer='antialias: true; alpha: true; precision: medium;' vr-mode-ui="enabled: false" stats>
-    <a-marker vidhandler preset="custom" type='pattern' url='...' smoothCount=0 smoothTolerance=0.0001>-->
+            PARAMETRI TELEFONO 
+                <a-scene embedded arjs='sourceType: webcam; patternRatio: 0.75 trackingMethod: best maxDetectionRate: 60 detectionMode: mono' renderer='antialias: true; alpha: true; precision: medium;' vr-mode-ui="enabled: false" stats>
+                <a-marker vidhandler preset="custom" type='pattern' url='...' smoothCount=0 smoothTolerance=0.0001>
+        -->
 
         <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" look-at="[gps-camera]" 
             gesture-handler class="clickable"
