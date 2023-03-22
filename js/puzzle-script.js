@@ -288,7 +288,7 @@ const app = new Vue({
                   pic.alp(0).animate({ alpha: 1 }, .7);
                   new Button({
                     label: "Gioca ancora",
-                    color: '#031116',
+                    color: '#deecef',
                     corner: 10,
                     backgroundColor: "#2c3e3d"}).
 
