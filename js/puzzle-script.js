@@ -253,7 +253,7 @@ const app = new Vue({
 
           const num = numX * numY;
           let placed = 0;
-          STYLE = { color: '#EFE7DE', size: 26, font: 'Elite' };
+          STYLE = { color: '#031116', size: 26, font: 'Elite' };
           const stats = new Label({
             text: `Posizionat${placed == 1 ? "o" : "i"} ${placed} pezz${placed == 1 ? "o" : "i"} su ${num}`,
             italic: true,
@@ -288,7 +288,7 @@ const app = new Vue({
                   pic.alp(0).animate({ alpha: 1 }, .7);
                   new Button({
                     label: "Gioca ancora",
-                    color: '#EFE7DE',
+                    color: '#031116',
                     corner: 10,
                     backgroundColor: "#2c3e3d"}).
 
@@ -308,7 +308,7 @@ const app = new Vue({
           // ~~~~~~~~~~~~~~~~~~~~~
           // CHECKBOXES AND FINISHING TOUCHES
 
-          Style.addType("CheckBox", { backgroundColor: '#00000000',borderColor: '#EFE7DE', font: 'Elite', });
+          Style.addType("CheckBox", { backgroundColor: '#00000000',borderColor: '#031116', font: 'Elite', });
           const hintCheck = new CheckBox(26, "Aggiungi contorno").alp(.8).pos(0, 120, CENTER, BOTTOM).wire({ target: hint, prop: "visible", input: "checked" });
           const picCheck = new CheckBox(26, "Aggiungi figura").alp(.8).pos(0, 80, CENTER, BOTTOM).wire({ target: pic, prop: "visible", input: "checked" });
           
