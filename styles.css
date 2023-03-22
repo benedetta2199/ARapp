@@ -1,5 +1,4 @@
-@font-face {font-family: 'Donau'; src: url('./asset/font/Donau.ttf')}        
-@font-face {font-family: 'Elite'; src: url('./asset/font/SpecialElite-Regular.ttf')}
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300;400&family=Special+Elite&display=swap');
 
 body{
     display: flex; flex-direction: column; flex-wrap: nowrap;
@@ -14,7 +13,7 @@ body{
 }
 
 h1{
-    font-family: 'Donau';
+    font-family: 'Aboreto';
     font-size: 28px;
     text-transform: uppercase;
     position: absolute;
@@ -37,7 +36,7 @@ h1{
     width:65%;
     padding-right: 10px;
     text-align: right;
-    font-family: 'Donau';
+    font-family: 'Aboreto';
     font-size: 18px;
     text-transform: uppercase;
     }
