@@ -66,9 +66,8 @@
 
             <a-entity id="river" geometry="primitive: plane" material="color: blue" gps-entity-place="latitude: 44.13872998373266; longitude: 12.244238611211696; " look-at="[gps-camera]" sound="src: #sound; autoplay: true"></a-entity>
          
-            <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="20 100 -20" position="0 1 2" look-at="[gps-camera]" 
-            gesture-handler class="clickable"
-            gps-entity-place="latitude: 44.141820; longitude: 12.244194; "/></a-image>
+            <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="20 100 -20" position="0 1 -3" look-at="[gps-camera]" 
+            gesture-handler class="clickable" gps-entity-place="latitude: 44.141820; longitude: 12.244194; "/></a-image>
             
             <a-camera gps-camera rotation-reader look-controls-enabled='false'  gps-projected-camera='gpsMinDistance: 5'
             arjs-look-controls='smoothingFactor: 0.1' class="clickable" gps-camera="simulateLatitude: 44.1387299; simulateLongitude: 12.244238;" > </a-camera>
