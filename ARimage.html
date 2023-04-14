@@ -64,16 +64,14 @@
         -->
         
         <a-assets>
-            <audio id="river" src="./asset/2d/sound.mp3" preload="auto"></audio>
+            <audio id="sound" src="./asset/2d/sound.mp3" preload="auto"></audio>
         </a-assets>
        
-        
-            <a-box material="color: yellow" gps-new-entity-place="latitude: 44.1387299; longitude: 12.244238;"  
-            rscale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" gesture-handler class="clickable" position="-0 0 -1"/>
+            <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" look-at="[gps-camera]" 
+            gesture-handler class="clickable"
+            gps-entity-place="latitude: 44.141820; longitude: 12.244194; " id="2dImage"/></a-image>
 
-            <a-sound src="src: url(./asset/2d/sound.mp3)" gps-entity-place="latitude: 44.1387299; longitude: 12.244238; " look-at="[gps-camera]" autoplay="true"></a-sound>
-            
-            <a-entity id="river" geometry="primitive: plane" material="color: blue" gps-entity-place="latitude: 44.13872998373266; longitude: 12.244238611211696; " look-at="[gps-camera]" sound="src: #river; autoplay: true"></a-entity>
+            <a-entity id="river" geometry="primitive: plane" material="color: blue" gps-entity-place="latitude: 44.13872998373266; longitude: 12.244238611211696; " look-at="[gps-camera]" sound="src: #sound; autoplay: true"></a-entity>
          
             
             <a-camera gps-camera rotation-reader look-controls-enabled='false'  gps-projected-camera='gpsMinDistance: 5'
