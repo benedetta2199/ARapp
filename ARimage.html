@@ -63,19 +63,27 @@
           position="0 0 -1" sound="src: url(./asset/2d/sound.mp3); autoplay: true"></a-entity>
         -->
         
+        <a-assets>
+            <audio id="river" src="sound.mp3" preload="auto"></audio>
+        </a-assets>
+  
+        <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" look-at="[gps-camera]" 
+        gesture-handler class="clickable"
+        gps-entity-place="latitude: 44.141820; longitude: 12.244194; " id="2dImage"/></a-image>
+       
         
+            <a-box material="color: yellow" gps-new-entity-place="latitude: 44.1387299; longitude: 12.244238;"/>
 
-            <a-sound src="src: url(/asset/2d/sound.mp3)"  scale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" look-at="[gps-camera]" 
-            gesture-handler gps-entity-place="latitude: 44.1387299; longitude: 12.244238; "></a-sound>
+            <a-sound src="src: url(/asset/2d/sound.mp3)" 
+            gps-entity-place="latitude: 44.1387299; longitude: 12.244238; " autoplay="true"></a-sound>
 
-            <a-image src="/asset/2d/SanPioV.png" scale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" look-at="[gps-camera]" 
-            gesture-handler class="clickable"
-            gps-entity-place="latitude: 44.1387299; longitude: 12.244238; " id="2dImage"/></a-image>
+            <a-entity id="river" geometry="primitive: plane" material="color: blue" gps-entity-place="latitude: 44.13872998373266; longitude: 12.244238611211696; "  sound="src: #river; autoplay: true"></a-entity>
 
-
+         
             
             <a-camera gps-camera rotation-reader look-controls-enabled='false'  gps-projected-camera='gpsMinDistance: 5'
-            arjs-look-controls='smoothingFactor: 0.1' class="clickable"> </a-camera>
+            ps-camera="simulateLatitude: 44.1387299; simulateLongitude: 12.244238;" 
+            arjs-look-controls='smoothingFactor: 0.1' class="clickable" simulateLatitude> </a-camera>
         </a-scene> 
              
         <button onclick="history.back()" class="back btn ar2D">
