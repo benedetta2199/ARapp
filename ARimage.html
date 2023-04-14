@@ -57,10 +57,11 @@
         
         
             <a-sound src="src: url(/asset/2d/sound.mp3)" position="0 2 5"></a-sound>
-        -->
+        --> , 
 
-        <a-entity id="river" geometry="primitive: plane" material="color: blue"
-          position="-10 0 0" sound="src: url(./asset/2d/sound.mp3); autoplay: true"></a-entity>
+        <a-entity id="river" geometry="primitive: plane" material="color: blue" look-at="[gps-camera]" gesture-handler class="clickable" 
+            gps-entity-place="latitude: 44.13872998373266; longitude: 12.244238611211696; " 
+          position="0 0 -1" sound="src: url(./asset/2d/sound.mp3); autoplay: true"></a-entity>
 
             
             <a-camera gps-camera rotation-reader look-controls-enabled='false'  gps-projected-camera='gpsMinDistance: 5'
