@@ -18,26 +18,23 @@
     
 
     <script>
-       /*const urlParams = new URLSearchParams(window.location.search);
+       const urlParams = new URLSearchParams(window.location.search);
         const img = urlParams.get('img');
 
         document.addEventListener("DOMContentLoaded", function(event) { 
             
-            const m3D = document.getElementById("2dImage");
+            const m3D = document.getElementById("sound");
             m3D.removeAttribute("src");
             switch(img){
                 case '1':
-                    m3D.setAttribute('src',"./asset/2d/SanPioV.png");
+                    m3D.setAttribute('src',"./asset/2d/sound1.mp3");
                     break;
                 case '2':
-                    m3D.setAttribute('src',"./asset/3d/ship.glb");
-                    break;
-                case '3':
-                    m3D.setAttribute('src',"./asset/3d/vase.glb");
+                    m3D.setAttribute('src',"./asset/2d/sound2.mp3");
                     break;
             }
             
-        });*/
+        });
     </script>
 
     <body>
@@ -64,7 +61,7 @@
         -->
         
         <a-assets>
-            <audio id="sound" src="./asset/2d/sound.mp3" preload="auto"></audio>
+            <audio id="sound" src="./asset/2d/sound1.mp3" preload="auto"></audio>
         </a-assets>
 
             <a-entity id="river" geometry="primitive: plane" material="color: blue" gps-entity-place="latitude: 44.13872998373266; longitude: 12.244238611211696; " look-at="[gps-camera]" sound="src: #sound; autoplay: true"></a-entity>
