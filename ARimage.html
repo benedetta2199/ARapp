@@ -18,29 +18,26 @@
     
 
     <script>
-       {/* const urlParams = new URLSearchParams(window.location.search);
+       const urlParams = new URLSearchParams(window.location.search);
         const img = urlParams.get('img');
 
         document.addEventListener("DOMContentLoaded", function(event) { 
             
-            const m3D = document.getElementById("3Dmodel");
-            m3D.removeAttribute("gltf-model");
+            const m3D = document.getElementById("2dImage");
+            m3D.removeAttribute("src");
             switch(img){
                 case '1':
-                    m3D.setAttribute('gltf-model',"./asset/3d/portrait.glb");
-                    document.getElementById("textAR").setAttribute('value',"Mezzo busto");
+                    m3D.setAttribute('src',"./asset/2d/SanPioV.png");
                     break;
                 case '2':
-                    m3D.setAttribute('gltf-model',"./asset/3d/ship.glb");
-                    document.getElementById("textAR").setAttribute('value',"Modellino di imbarcazione");
+                    m3D.setAttribute('src',"./asset/3d/ship.glb");
                     break;
                 case '3':
-                    m3D.setAttribute('gltf-model',"./asset/3d/vase.glb");
-                    document.getElementById("textAR").setAttribute('value',"Vaso");
+                    m3D.setAttribute('src',"./asset/3d/vase.glb");
                     break;
             }
             
-        });*/}
+        });
     </script>
 
     <body>
@@ -54,9 +51,17 @@
                 <a-marker vidhandler preset="custom" type='pattern' url='...' smoothCount=0 smoothTolerance=0.0001>
         -->
 
-        <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" look-at="[gps-camera]" 
+        <!--<a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="-20 100 -20" position="0 0 -1" look-at="[gps-camera]" 
             gesture-handler class="clickable"
-            gps-entity-place="latitude: 44.141820; longitude: 12.244194; "/></a-image>
+            gps-entity-place="latitude: 44.141820; longitude: 12.244194; " id="2dImage"/></a-image>
+        
+        
+            <a-sound src="src: url(/asset/2d/sound.mp3)" position="0 2 5"></a-sound>
+        -->
+
+        <a-entity id="river" geometry="primitive: plane" material="color: blue"
+          position="-10 0 0" sound="src: url(./asset/2d/sound.mp3); autoplay: true"></a-entity>
+
             
             <a-camera gps-camera rotation-reader look-controls-enabled='false'  gps-projected-camera='gpsMinDistance: 5'
             arjs-look-controls='smoothingFactor: 0.1' class="clickable"> </a-camera>
