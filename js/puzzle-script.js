@@ -8,9 +8,9 @@ const difficult = urlParams.get('difficult');
 
 let srcImg;
 switch(img){
-  case '1': srcImg='./asset/puzzle/1.jpg';break;
-  case '2': srcImg='./asset/puzzle/2.jpg';break;
-  case '3': srcImg='./asset/puzzle/3.jpg';break;
+  case '1': srcImg='./asset/puzzle/1.png';break;
+  case '2': srcImg='./asset/puzzle/2.png';break;
+  case '3': srcImg='./asset/puzzle/3.png';break;
   case '4': srcImg='./asset/puzzle/4.jpg';break;
   case '5': srcImg='./asset/puzzle/5.jpg';break;
 }
