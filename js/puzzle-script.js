@@ -309,8 +309,8 @@ const app = new Vue({
           // CHECKBOXES AND FINISHING TOUCHES
 
           Style.addType("CheckBox", { backgroundColor: '#00000000',borderColor: '#031116', font: 'Elite', });
-          const hintCheck = new CheckBox(26, "Aggiungi contorno").alp(.8).pos(0, 120, CENTER, BOTTOM).wire({ target: hint, prop: "visible", input: "checked" });
-          const picCheck = new CheckBox(26, "Aggiungi figura").alp(.8).pos(0, 80, CENTER, BOTTOM).wire({ target: pic, prop: "visible", input: "checked" });
+          const hintCheck = new CheckBox(26, "Aggiungi contorno").alp(.8).pos(0, 90, CENTER, BOTTOM).wire({ target: hint, prop: "visible", input: "checked" });
+          const picCheck = new CheckBox(26, "Aggiungi figura").alp(.8).pos(0, 50, CENTER, BOTTOM).wire({ target: pic, prop: "visible", input: "checked" });
           
 
           pieces.top(); // add pieces above everything
