@@ -30,7 +30,9 @@
             switch(img){
                 case 'villaggio':
                     sound.setAttribute('src',"./asset/2d/sound1.mp3");
-                    img.setAttribute('src',"./asset/2d/render-scavo.webp");
+                    img.setAttribute('src',"./asset/2d/render-villaggio.webp");
+                    img.setAttribute('scale',"1 0.6 1");
+                    img.setAttribute('position',"0.5 2.2 -3");
                     break;
                 case 'mercato':
                     sound.setAttribute('src',"./asset/2d/sound2.mp3");
@@ -70,7 +72,7 @@
                 <audio id="sound" src="./asset/2d/sound1.mp3" preload="auto"></audio>
             </a-assets gps-entity-place="latitude: 44.1417; longitude: 12.2442; ">
           
-            <a-image src="./asset/2d/render-scavo.webp" scale="1 0.6 1" rotation="0 0 0" position="0.5 2.2 -3" look-at="[gps-camera]"  id="img"
+            <a-image src="./asset/2d/render-capanna.webp" scale="1 0.6 1" rotation="0 0 0" position="0.5 2.2 -3" look-at="[gps-camera]"  id="img"
             class="clickable" gps-entity-place="latitude: 44.1418; longitude: 12.2442; "/></a-image>
             
             <a-camera gps-camera rotation-reader look-controls-enabled='false' gps-projected-camera='gpsMinDistance: 5'
