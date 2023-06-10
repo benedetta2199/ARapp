@@ -25,7 +25,7 @@ const app = new Vue({
   mounted() {
     // store a reference to vue for inside the ZIM Frame
     const vue = this;
-    const frame = new Frame("fit", 560, 800, '#00000000', '#00000000', srcImg,);
+    const frame = new Frame("fit", 750, 1000, '#00000000', '#00000000', srcImg,);
       frame.on("ready", () => {// ES6 Arrow Function - similar to function(){} {ready, assets:"SpecialElite-Regular.ttf", path:"/assets/font"}
         //zog("ready from ZIM Frame"); // logs in console (F12 - choose console)
         frame.loadAssets({font: "Elite", src:"./asset/font/SpecialElite-Regular.ttf"});
@@ -258,7 +258,7 @@ const app = new Vue({
             text: `Posizionat${placed == 1 ? "o" : "i"} ${placed} pezz${placed == 1 ? "o" : "i"} su ${num}`,
             italic: true,
             align: CENTER }).
-          centerReg().pos(0, 100, CENTER, TOP);
+          centerReg().pos(0, 50, CENTER, TOP);
 
 
           // ~~~~~~~~~~~~~~~~~~~~~
@@ -273,7 +273,7 @@ const app = new Vue({
               placed++;
               if (placed == num) {
                 stats.text = `Complimenti ${num} tutti i pezzi sono stati posizionati!`;
-                stats.pos(0, 50, CENTER, TOP);
+                stats.pos(0, 0, CENTER, TOP);
                 timeout(1, function () {
                   emitter.emitterForce = 8;
                   emitter.center().mov(0, -170).spurt(100);
