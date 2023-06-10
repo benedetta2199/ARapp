@@ -272,7 +272,7 @@ const app = new Vue({
               emitter.loc(box).spurt(30);
               placed++;
               if (placed == num) {
-                stats.text = `Complimenti !!!`;
+                stats.text = `Complimenti!!!`;
                 stats.pos(0, 0, CENTER, TOP);
                 timeout(1, function () {
                   emitter.emitterForce = 8;
@@ -293,7 +293,7 @@ const app = new Vue({
                     backgroundColor: "#2c3e3d"}).
 
                   sca(.8).
-                  pos(0, 80, CENTER, BOTTOM).
+                  pos(0, 50, CENTER, TOP).
                   alp(0).
                   animate({ alpha: 1 })
                   // normally just zgo("index.html") to reload 
