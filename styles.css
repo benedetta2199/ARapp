@@ -70,7 +70,8 @@ h1{
 }
 
 .back.ar3D{bottom: 22vh;}
-.back.puzzle, .back.ar2D{bottom: 15vh;}
+.back.puzzle{bottom: 10vh;}
+.back.ar2D{bottom: 15vh;}
 
 .card{
     border: none !important;
