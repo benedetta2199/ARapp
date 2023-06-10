@@ -272,7 +272,7 @@ const app = new Vue({
               emitter.loc(box).spurt(30);
               placed++;
               if (placed == num) {
-                stats.text = `Complimenti ${num} tutti i pezzi sono stati posizionati!`;
+                stats.text = `Complimenti !!!`;
                 stats.pos(0, 0, CENTER, TOP);
                 timeout(1, function () {
                   emitter.emitterForce = 8;
