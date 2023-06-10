@@ -23,14 +23,20 @@
 
         document.addEventListener("DOMContentLoaded", function(event) { 
             
-            const m3D = document.getElementById("sound");
-            m3D.removeAttribute("src");
+            const sound = document.getElementById("sound");
+            sound.removeAttribute("src");
+            const img = document.getElementById("sound");
+            img.removeAttribute("src");
             switch(img){
-                case '1':
-                    m3D.setAttribute('src',"./asset/2d/sound1.mp3");
+                case 'villaggio':
+                    sound.setAttribute('src',"./asset/2d/sound1.mp3");
+                    img.setAttribute('src',"./asset/2d/render-scavo.webp");
                     break;
-                case '2':
-                    m3D.setAttribute('src',"./asset/2d/sound2.mp3");
+                case 'mercato':
+                    sound.setAttribute('src',"./asset/2d/sound2.mp3");
+                    break;
+                case 'rocca':
+                    sound.setAttribute('src',"./asset/2d/sound2.mp3");
                     break;
             }
             
@@ -60,13 +66,12 @@
           position="0 0 -1" sound="src: url(./asset/2d/sound.mp3); autoplay: true"></a-entity>
         -->
         
-        <a-assets>
-            <audio id="sound" src="./asset/2d/sound1.mp3" preload="auto"></audio>
-        </a-assets>
+            <a-assets>
+                <audio id="sound" src="./asset/2d/sound1.mp3" preload="auto"></audio>
+            </a-assets>
 
-            <a-entity id="river" geometry="primitive: plane" material="color: blue" gps-entity-place="latitude: 44.1386; longitude: 12.24426; " look-at="[gps-camera]" sound="src: #sound; autoplay: true"></a-entity>
-         
-            <a-image src="./asset/2d/SanPioV.png" scale="1 5.2 1" rotation="20 100 -20" position="0 1 -3" look-at="[gps-camera]" 
+          
+            <a-image src="" scale="1 5.2 1" rotation="20 100 -20" position="0 1 -3" look-at="[gps-camera]"  id="img"
             gesture-handler class="clickable" gps-entity-place="latitude: 44.1386; longitude: 12.2442; "/></a-image>
             
             <a-camera gps-camera rotation-reader look-controls-enabled='false'  gps-projected-camera='gpsMinDistance: 5'
