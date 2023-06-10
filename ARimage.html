@@ -25,14 +25,19 @@
             
             const sound = document.getElementById("sound");
             sound.removeAttribute("src");
-            const img = document.getElementById("sound");
+            const img1 = document.getElementById("sound");
+            img.removeAttribute("src");
+            const img2 = document.getElementById("sound");
             img.removeAttribute("src");
             switch(img){
                 case 'villaggio':
                     sound.setAttribute('src',"./asset/2d/sound1.mp3");
-                    img.setAttribute('src',"./asset/2d/render-villaggio.webp");
-                    img.setAttribute('scale',"1 0.6 1");
-                    img.setAttribute('position',"0.5 2.2 -3");
+                    img1.setAttribute('src',"./asset/2d/render-villaggio.webp");
+                    img1.setAttribute('scale',"1 0.6 1");
+                    img1.setAttribute('position',"0.5 2.2 -3");
+                    img1.setAttribute('src',"./asset/2d/render-capanna.webp");
+                    img1.setAttribute('scale',"1 0.6 1");
+                    img1.setAttribute('position',"1 0.8 -3");
                     break;
                 case 'mercato':
                     sound.setAttribute('src',"./asset/2d/sound2.mp3");
@@ -72,7 +77,10 @@
                 <audio id="sound" src="./asset/2d/sound1.mp3" preload="auto"></audio>
             </a-assets gps-entity-place="latitude: 44.1417; longitude: 12.2442; ">
           
-            <a-image src="./asset/2d/render-capanna.webp" scale="1 0.6 1" rotation="0 0 0" position="0.5 2.2 -3" look-at="[gps-camera]"  id="img"
+            <a-image src="./asset/2d/render-capanna.webp" scale="1 0.6 1" rotation="0 0 0" position="0.5 2.2 -3" look-at="[gps-camera]"  id="img1"
+            class="clickable" gps-entity-place="latitude: 44.1418; longitude: 12.2442; "/></a-image>
+
+            <a-image src="./asset/2d/render-capanna.webp" scale="1 0.6 1" rotation="0 0 0" position="0.5 2.2 -3" look-at="[gps-camera]"  id="img2"
             class="clickable" gps-entity-place="latitude: 44.1418; longitude: 12.2442; "/></a-image>
             
             <a-camera gps-camera rotation-reader look-controls-enabled='false' gps-projected-camera='gpsMinDistance: 5'
