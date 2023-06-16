@@ -24,7 +24,7 @@ h1{
 
 .glass {
     position: absolute;
-    bottom: 5px;
+    bottom: 3vh;
     background: rgba(255,255,255,0.4);
     border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.2);
@@ -40,7 +40,7 @@ h1{
     font-family: 'Special Elite';
     font-size: 14px;
     position: relative;
-    top: 18px;
+    top: 8px;
 }
 
 .glass div{
@@ -60,18 +60,6 @@ h1{
     align-items: center;
     justify-content: center;
 }
-
-
-.back{
-    background-color: rgba(222, 236, 239,0.5) !important;
-    color: #2c3e3d  !important ;
-    position: absolute;
-    right: 2vw;
-}
-
-.back.ar3D{bottom: 22vh;}
-.back.puzzle{bottom: 12vh;}
-.back.ar2D{bottom: 15vh;}
 
 .card{
     border: none !important;
