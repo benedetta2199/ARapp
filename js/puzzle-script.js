@@ -286,20 +286,6 @@ const app = new Vue({
                   outline.animate({ alpha: 0 }, .7);
                   hint.animate({ alpha: 0 }, .7);
                   pic.alp(0).animate({ alpha: 1 }, .7);
-                  new Button({
-                    label: "Gioca ancora",
-                    color: '#deecef',
-                    corner: 10,
-                    backgroundColor: "#2c3e3d"}).
-
-                  sca(.8).
-                  pos(0, 50, CENTER, TOP).
-                  alp(0).
-                  animate({ alpha: 1 })
-                  // normally just zgo("index.html") to reload 
-                  // but it is different in CodePen and they have disabled document.location.reload()
-                  // so not sure what to do... here is a the puzzle on ZIM
-                  .tap(() => {zgo("./puzzleLevel.html?img="+img);});
                 });
               } else stats.text = `Posizionat${placed == 1 ? "o" : "i"} ${placed} pezz${placed == 1 ? "o" : "i"} su ${num}`;
             } else stage.update();
