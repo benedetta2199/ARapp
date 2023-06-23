@@ -37,6 +37,7 @@
             switch(img){
                 case 'villaggio':
                     console.log('PROVA');
+                    sound.setAttribute('sound',"src: url(./asset/2d/sound1.mp3); autoplay: true");
                     sound.setAttribute('gps-entity-place', {latitude: 44.1418, longitude: 12.2442});
                     //sound.setAttribute('src',"./asset/2d/sound1.mp3");
                     //soundGps.setAttribute('gps-entity-place', 'latitude: 43.958; longitude: 12.736');
@@ -59,7 +60,7 @@
                     break;
                 case 'rocca':
                     //12.741678 - 43.963245
-                    sound.setAttribute('src',"./asset/2d/sound2.mp3");
+                    sound.setAttribute('sound',"src: url(./asset/2d/sound1.mp3); autoplay: true");
                     break;
             }
             //console.log(sound);
