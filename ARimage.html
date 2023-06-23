@@ -33,6 +33,7 @@
             img1.removeAttribute("src");
             const img2 = document.getElementById("img2");
             img2.removeAttribute("src");
+            console.log(sound + img1 + img2);
 
             switch(img){
                 case 'villaggio':
@@ -91,7 +92,7 @@
             </a-assets gps-entity-place="latitude: 44.1417; longitude: 12.2442; ">
         -->
         
-        <a-entity id="river" geometry="primitive: plane" material="color: blue" look-at="[gps-camera]" gesture-handler class="clickable" 
+        <a-entity id="sound" geometry="primitive: plane" material="color: blue" look-at="[gps-camera]" gesture-handler class="clickable" 
             gps-entity-place="latitude: 44.13872998373266; longitude: 12.244238611211696; " position="0 0 -1" sound="src: url(./asset/2d/sound.mp3); autoplay: true"></a-entity>
             
           
