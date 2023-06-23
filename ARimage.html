@@ -33,10 +33,13 @@
             img1.removeAttribute("src");
             const img2 = document.getElementById("img2");
             img2.removeAttribute("src");
-            console.log(sound + img1 + img2);
+            console.log(sound);
+            console.log(img1);
+            console.log(img2);
 
             switch(img){
                 case 'villaggio':
+                    console.log('PROVA');
                     sound.setAttribute('src',"./asset/2d/sound1.mp3");
                     soundGps.setAttribute('gps-entity-place', 'latitude: 43.958; longitude: 12.736');
                     img1.setAttribute('src',"./asset/2d/render-villaggio.webp");
