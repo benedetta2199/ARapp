@@ -21,7 +21,6 @@
        const urlParams = new URLSearchParams(window.location.search);
         const img = urlParams.get('img');
         console.log(img);
-        navigator.geolocation.getCurrentPosition(showPosition);
 
         document.addEventListener("DOMContentLoaded", function(event) { 
 
@@ -66,10 +65,6 @@
             console.log(img2);
             
         });
-        
-        function showPosition(position) {
-            document.getElementById("coord").innerHTML = location.coords.latitude+' - '+location.coords.longitude;
-        }
         
     </script>
 
