@@ -36,7 +36,7 @@
 
             switch(img){
                 case 'villaggio':
-                parent.innerHTML = `<a-scene embedded  loading-screen="enabled: false;" arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false"> 
+                parent.innerHTML += `<a-scene embedded  loading-screen="enabled: false;" arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false"> 
 
 <a-entity id="sound" geometry="primitive: plane" material="color: blue" look-at="[gps-camera]" gesture-handler class="clickable" 
     gps-entity-place="latitude: 44.1418; longitude: 12.2443; " position="0 0 -1" sound="src: url(./asset/2d/sound1.mp3); autoplay: false"></a-entity>
