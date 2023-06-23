@@ -61,6 +61,9 @@
                     sound.setAttribute('src',"./asset/2d/sound2.mp3");
                     break;
             }
+            console.log(sound);
+            console.log(img1);
+            console.log(img2);
             
         });
         
@@ -88,9 +91,11 @@
         
         
         <a-sound src="src: url(/asset/2d/sound.mp3)" position="0 2 5"></a-sound>
+        
         <a-entity id="river" geometry="primitive: plane" material="color: blue" look-at="[gps-camera]" gesture-handler class="clickable" 
             gps-entity-place="latitude: 44.13872998373266; longitude: 12.244238611211696; " 
           position="0 0 -1" sound="src: url(./asset/2d/sound.mp3); autoplay: true"></a-entity>
+          
           <a-assets id="soung-gps">
                 <audio id="sound" src="./asset/2d/sound1.mp3" preload="auto"></audio>
             </a-assets gps-entity-place="latitude: 44.1417; longitude: 12.2442; ">
