@@ -30,6 +30,8 @@
             img1.removeAttribute("src");
             const img2 = document.getElementById("img2");
             img2.removeAttribute("src");
+
+           document.getElementById("coord").innerHTML(location.coords.latitude+' - '+location.coords.longitude);
             switch(img){
                 case 'villaggio':
                     sound.setAttribute('src',"./asset/2d/sound1.mp3");
@@ -57,7 +59,8 @@
     </script>
 
     <body>
-        <h1 class="white">Muovi lentamente il telefono</h1>
+        <!--<h1 class="white">Muovi lentamente il telefono</h1>-->
+        <h1 id="coord"></h1>
 
         <a-scene embedded  loading-screen="enabled: false;" arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
         <!--<a-scene embedded arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'
