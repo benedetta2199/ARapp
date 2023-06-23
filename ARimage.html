@@ -20,11 +20,11 @@
     <script>
        const urlParams = new URLSearchParams(window.location.search);
         const img = urlParams.get('img');
-        console.log(img)
+        console.log(img);
+        navigator.geolocation.getCurrentPosition(showPosition);
 
         document.addEventListener("DOMContentLoaded", function(event) { 
 
-            navigator.geolocation.getCurrentPosition(showPosition);
             
             const sound = document.getElementById("sound");
             sound.removeAttribute("src");
