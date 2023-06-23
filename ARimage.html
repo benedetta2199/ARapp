@@ -37,8 +37,8 @@
             switch(img){
                 case 'villaggio':
                     console.log('PROVA');
-                    sound.setAttribute('src',"./asset/2d/sound1.mp3");
-                    soundGps.setAttribute('gps-entity-place', 'latitude: 43.958; longitude: 12.736');
+                    //sound.setAttribute('src',"./asset/2d/sound1.mp3");
+                    //soundGps.setAttribute('gps-entity-place', 'latitude: 43.958; longitude: 12.736');
                     img1.setAttribute('src',"./asset/2d/render-villaggio.webp");
                     img1.setAttribute('scale',"1 0.6 1");
                     img1.setAttribute('position',"0.5 2.2 -3");
@@ -99,11 +99,11 @@
           <a-assets id="soung-gps">
                 <audio id="sound" src="./asset/2d/sound1.mp3" preload="auto"></audio>
             </a-assets gps-entity-place="latitude: 44.1417; longitude: 12.2442; ">
-        -->
+        
         
         <a-entity id="sound" geometry="primitive: plane" material="color: blue" look-at="[gps-camera]" gesture-handler class="clickable" 
             gps-entity-place="latitude: 44.13872998373266; longitude: 12.244238611211696; " position="0 0 -1" sound="src: url(./asset/2d/sound.mp3); autoplay: true"></a-entity>
-            
+        -->    
           
             <a-image src="./asset/2d/render-capanna.webp" scale="1 0.6 1" rotation="0 0 0" position="0.5 2.2 -3" look-at="[gps-camera]"  id="img1"
             class="clickable" gps-entity-place="latitude: 44.1418; longitude: 12.2442; "/></a-image>
