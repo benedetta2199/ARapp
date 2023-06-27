@@ -273,10 +273,10 @@ const app = new Vue({
               placed++;
               if (placed == num) {
                 stats.text = `Complimenti!!!`;
-                stats.pos(0, 10, CENTER, TOP);
+                /*stats.pos(0, 10, CENTER, TOP);*/
                 timeout(1, function () {
                   emitter.emitterForce = 8;
-                  /*emitter.center().mov(0, -170).spurt(100);*/
+                  emitter.center().mov(0, -170).spurt(100);
                 });
                 timeout(2, function () {
                   hintCheck.removeFrom();
