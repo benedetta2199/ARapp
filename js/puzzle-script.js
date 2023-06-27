@@ -273,7 +273,7 @@ const app = new Vue({
               placed++;
               if (placed == num) {
                 stats.text = `Complimenti!!!`;
-                /*stats.pos(0, 10, CENTER, TOP);*/
+                /*stats.pos(0, 10, CENTER, TOP);
                 timeout(1, function () {
                   emitter.emitterForce = 8;
                   emitter.center().mov(0, -170).spurt(100);
@@ -286,7 +286,7 @@ const app = new Vue({
                   outline.animate({ alpha: 0 }, .7);
                   hint.animate({ alpha: 0 }, .7);
                   pic.alp(0).animate({ alpha: 1 }, .7);
-                });
+                });*/
               } else stats.text = `Posizionat${placed == 1 ? "o" : "i"} ${placed} pezz${placed == 1 ? "o" : "i"} su ${num}`;
             } else stage.update();
           }
